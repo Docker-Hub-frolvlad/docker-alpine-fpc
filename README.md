@@ -1,3 +1,7 @@
+[![Docker Stars](https://img.shields.io/docker/stars/frolvlad/alpine-fpc.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-fpc/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/frolvlad/alpine-fpc.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-fpc/)
+
+
 FreePascal Compiler (fpc) Docker image
 ======================================
 
