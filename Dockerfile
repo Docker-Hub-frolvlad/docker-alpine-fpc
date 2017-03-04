@@ -16,9 +16,6 @@ RUN apk add --no-cache binutils && \
     \
     echo -e '/usr\nN\nN\nN\n' | sh ./install.sh && \
     find "/usr/lib/fpc/${FPC_VERSION}/units/${FPC_ARCH}/" -type d -mindepth 1 -maxdepth 1 \
-        -not -name 'fcl-base' \
-        -not -name 'rtl' \
-        -not -name 'rtl-console' \
-        -not -name 'rtl-objpas' \
+        -name 'googleapi' \
         -exec rm -r {} \; && \
     rm -r "/lib64" "/tmp/"*
