@@ -8,9 +8,17 @@ FreePascal Compiler (fpc) Docker image
 This image is based on Alpine Linux image, which is only a 5MB image, and contains
 [FreePascal Compiler](http://www.freepascal.org/).
 
-Download size of this image is only:
+`slim` (`master` branch) download image size is:
 
-[![](https://images.microbadger.com/badges/image/frolvlad/alpine-fpc.svg)](http://microbadger.com/images/frolvlad/alpine-fpc "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/frolvlad/alpine-fpc:slim.svg)](http://microbadger.com/images/frolvlad/alpine-fpc:slim "Get your own image badge on microbadger.com")
+
+`cleaned` (`latest` tag) download image size is:
+
+[![](https://images.microbadger.com/badges/image/frolvlad/alpine-fpc:cleaned.svg)](http://microbadger.com/images/frolvlad/alpine-fpc:cleaned "Get your own image badge on microbadger.com")
+
+`full` download image size is:
+
+[![](https://images.microbadger.com/badges/image/frolvlad/alpine-fpc:full.svg)](http://microbadger.com/images/frolvlad/alpine-fpc:full "Get your own image badge on microbadger.com")
 
 
 Usage Example

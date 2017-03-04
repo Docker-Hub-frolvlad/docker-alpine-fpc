@@ -15,4 +15,10 @@ RUN apk add --no-cache binutils && \
     ln -s /lib/ld-musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2 && \
     \
     echo -e '/usr\nN\nN\nN\n' | sh ./install.sh && \
+    find "/usr/lib/fpc/${FPC_VERSION}/units/${FPC_ARCH}/" -type d -mindepth 1 -maxdepth 1 \
+        -not -name 'fcl-base' \
+        -not -name 'rtl' \
+        -not -name 'rtl-console' \
+        -not -name 'rtl-objpas' \
+        -exec rm -r {} \; && \
     rm -r "/lib64" "/tmp/"*
