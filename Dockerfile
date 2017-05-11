@@ -5,7 +5,7 @@ ENV FPC_VERSION="3.0.2" \
 
 RUN apk add --no-cache binutils && \
     cd /tmp && \
-    wget "ftp://freepascal.stack.nl/pub/fpc/dist/${FPC_VERSION}/${FPC_ARCH}/fpc-${FPC_VERSION}.${FPC_ARCH}.tar" -O fpc.tar && \
+    wget "ftp://ftp.hu.freepascal.org/pub/fpc/dist/${FPC_VERSION}/${FPC_ARCH}/fpc-${FPC_VERSION}.${FPC_ARCH}.tar" -O fpc.tar && \
     tar xf "fpc.tar" && \
     cd "fpc-${FPC_VERSION}.${FPC_ARCH}" && \
     rm demo* doc* && \
