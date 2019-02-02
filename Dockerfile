@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.9
 
 ENV FPC_VERSION="3.0.4" \
     FPC_ARCH="x86_64-linux"
