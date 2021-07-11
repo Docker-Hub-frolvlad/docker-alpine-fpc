@@ -1,13 +1,13 @@
-FROM alpine:3.13
+FROM alpine:3.14
 
-ENV FPC_VERSION="3.2.0" \
+ENV FPC_VERSION="3.2.2" \
     FPC_ARCH="x86_64-linux"
 
 RUN apk add --no-cache binutils && \
     cd /tmp && \
-    wget "https://downloads.sourceforge.net/project/freepascal/Linux/${FPC_VERSION}/fpc-${FPC_VERSION}-${FPC_ARCH}.tar" -O fpc.tar && \
+    wget "https://downloads.sourceforge.net/project/freepascal/Linux/${FPC_VERSION}/fpc-${FPC_VERSION}.${FPC_ARCH}.tar" -O fpc.tar && \
     tar xf "fpc.tar" && \
-    cd "fpc-${FPC_VERSION}-${FPC_ARCH}" && \
+    cd "fpc-${FPC_VERSION}.${FPC_ARCH}" && \
     rm demo* doc* && \
     \
     # Workaround musl vs glibc entrypoint for `fpcmkcfg`
