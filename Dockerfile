@@ -1,9 +1,9 @@
-FROM alpine:3.17
+FROM alpine:3.18
 
-ENV FPC_VERSION="3.2.2" \
-    FPC_ARCH="x86_64-linux"
+ENV FPC_VERSION="3.2.2"
 
 RUN apk add --no-cache binutils && \
+    FPC_ARCH="$(uname -m)-linux" && \
     cd /tmp && \
     wget "https://downloads.sourceforge.net/project/freepascal/Linux/${FPC_VERSION}/fpc-${FPC_VERSION}.${FPC_ARCH}.tar" -O fpc.tar && \
     tar xf "fpc.tar" && \
